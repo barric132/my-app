@@ -1,0 +1,39 @@
+.sidebar {
+    background-color: #f9f9f9; /* 밝은 배경색 */
+    padding: 20px;
+    height: 100vh; /* 전체 높이를 차지 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 약한 그림자 효과 */
+    display: flex;
+    flex-direction: column;
+  
+    .sidebar-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #5513d9; /* 헤더 텍스트 색 */
+        text-align: center; /* 헤더 텍스트 가운데 정렬 */
+    }
+  
+    .menu-item {
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        display: flex;
+        justify-content: center; /* 메뉴 아이템을 가운데 정렬 */
+
+        &:hover {
+            background-color: #e2e2e2; /* 호버 시 배경색 변화 */
+        }
+  
+        a {
+            text-decoration: none;
+            color: #333333; /* 링크 색 */
+            font-size: 18px;
+            display: block; /* 링크를 블록 요소로 만들어 전체 영역 클릭 가능 */
+            width: 100%; /* 링크의 폭을 전체로 확장 */
+            text-align: center; /* 링크 텍스트 가운데 정렬 */
+        }
+    }
+}

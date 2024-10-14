@@ -1,0 +1,43 @@
+.main-layout {
+    display: flex;
+
+    .main-content {
+        flex: 1;
+        padding: 20px;
+        background-color: #1ff6b9; // 흰색 배경
+
+        .header {
+            background-color: #1ff6b9; // 밝은 회색 배경
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px; // 둥근 모서리
+            text-align: center;
+
+            h1 {
+                margin: 0;
+                color: #333; // 헤더 색상
+            }
+        }
+
+        .content {
+            background-color: #ffffff; // 흰색 배경
+            padding: 20px;
+            border-radius: 5px; // 둥근 모서리
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // 부드러운 그림자
+
+            // 텍스트 가운데 정렬
+            display: flex;
+            flex-direction: column;
+            align-items: center; // 수평 가운데 정렬
+            justify-content: center; // 수직 가운데 정렬
+            text-align: center; // 텍스트 가운데 정렬
+            min-height: 300px; // 최소 높이 설정 (원하는 대로 조정 가능)
+
+            // 내용이 없을 때를 위한 기본 텍스트
+            p {
+                margin: 0;
+                color: #555; // 내용 색상
+            }
+        }
+    }
+}
